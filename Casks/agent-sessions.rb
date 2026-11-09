@@ -12,6 +12,7 @@ cask "agent-sessions" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :ventura
 
@@ -19,6 +20,7 @@ cask "agent-sessions" do
 
   zap trash: [
     "~/Library/Application Support/agent-sessions",
+    "~/Library/Caches/agent-sessions-updater",
     "~/Library/Preferences/com.karlhsueh.agent-sessions.plist",
     "~/Library/Saved Application State/com.karlhsueh.agent-sessions.savedState",
   ]
