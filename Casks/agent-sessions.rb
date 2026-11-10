@@ -1,6 +1,6 @@
 cask "agent-sessions" do
-  version "0.1.5"
-  sha256 "6663dd81d82b8ee545b5170e31998f52f4e8fcb3c89326c0a2970c31226cf92b"
+  version "0.1.6"
+  sha256 "483ce5f7f417e85126c08cbb47f6bb02875c26320cf2b7817529f0d1a46b0ef8"
 
   url "https://github.com/karlhsueh/agent-sessions/releases/download/v#{version}/agent-sessions-mac-arm64.dmg"
   name "Agent Sessions"
