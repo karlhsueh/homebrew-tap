@@ -1,8 +1,11 @@
 cask "agent-sessions" do
-  version "0.1.7"
-  sha256 "577cac105f34084ddd3953e7ccfd5127b227e524b784d7ad11d49f6cc04bfd19"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/karlhsueh/agent-sessions/releases/download/v#{version}/agent-sessions-mac-arm64.dmg"
+  version "0.1.8"
+  sha256 arm:   "42e914b7ca6c5ccd7e6bad410cb9959ca59525c18611b97349125dcf93f2d239",
+         intel: "0cc90ade59b09aa94cc2906b6252bff6ee002d032977cb61b10ec2ead56e73be"
+
+  url "https://github.com/karlhsueh/agent-sessions/releases/download/v#{version}/agent-sessions-mac-#{arch}.dmg"
   name "Agent Sessions"
   desc "Move Claude Code and Codex sessions between computers"
   homepage "https://karlhsueh.github.io/agent-sessions/"
@@ -13,7 +16,6 @@ cask "agent-sessions" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
   depends_on macos: :ventura
 
   app "Agent Sessions.app"
