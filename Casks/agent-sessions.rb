@@ -1,9 +1,9 @@
 cask "agent-sessions" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.9"
-  sha256 arm:   "f2c61f262e27cbb8c3b96e9e3ddd2ff95ac260a167725274edc3a9e7b7514ab8",
-         intel: "51b048399153f09eb17fe1f848bd4a28d62a9d16924c87b2ca6af77ef4718192"
+  version "0.1.10"
+  sha256 arm:   "c5d7b381560c3491750c2a6f40e3ce88841ce155cbac1fe47f11592b32a40a0d",
+         intel: "d5a5aa4f931d5f33492de91c9695aec12bd46fa325470e64a53b1efe1b5eedb5"
 
   url "https://github.com/karlhsueh/agent-sessions/releases/download/v#{version}/agent-sessions-mac-#{arch}.dmg"
   name "Agent Sessions"
