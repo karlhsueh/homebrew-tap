@@ -1,9 +1,9 @@
 cask "agent-session-mover" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "208bb4cfe54fa5426b6504678a27198bd5ce55e0892bf18011b55162b251a46b",
-         intel: "2831f115f3d588cafb99dc8418c586dd56afd7b55eff73e8fbc51f8af682520d"
+  version "0.2.1"
+  sha256 arm:   "d67169e0528c2b309ed6795e61cc9e9d8a807ae08de8787cb5d88b3d7a504b20",
+         intel: "c94408f06275b4f8a9a223c7dd5b309d41b4258e3a826fe6cb3d472f1ea1f719"
 
   url "https://github.com/karlhsueh/agent-session-mover/releases/download/v#{version}/agent-session-mover-mac-#{arch}.dmg"
   name "Agent Session Mover"
